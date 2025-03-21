@@ -60,6 +60,18 @@ The agent will start and register itself with the MCP server using `stdio` trans
 - It will then connect to Snowflake and execute the provided query.
 - The results will be returned as a JSON object, either as rows (for `SELECT` queries) or as an execution confirmation (for `INSERT/UPDATE/DELETE` queries).
 
+Add the following to Claude_desktop_config.json file
+
+```json
+{
+  "mcpServers": {
+    "snowflake": {
+      "command": "C:\\Users\\Lenovo\\Desktop\\Python\\mysql-mcp\\run_snowflake.bat"
+    }
+  }
+}
+```
+
 ## 🔄 Example Request via MCP
 
 ```json
